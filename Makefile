@@ -1,3 +1,7 @@
+.PHONY: fonts lab
+
+.DEFAULT_GOAL := lab
+
 # opencv-python wheels ship a Qt backend but not its fonts. On Linux, Qt looks
 # for fonts in cv2/qt/fonts (set via QT_QPA_FONTDIR in cv2/config-3.py) and
 # prints "QFontDatabase: Cannot find font directory" warnings if that dir is
